@@ -48,7 +48,7 @@ def doRequest(requestId, client, method, params=None):
     client.write((dumps(request) + "\r\n").encode('ascii'))
     while (True):
         response = client.read_until("\r\n".encode('ascii'), 2)
-        jResponse = loads(response)
+        jResponse = loads(response.decode())
         if 'id' in jResponse:
             if jResponse['id'] == requestId:
                 if 'result' in jResponse:
