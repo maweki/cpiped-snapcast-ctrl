@@ -1,0 +1,255 @@
+{
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+        "server": {
+            "groups": [
+                {
+                    "clients": [
+                        {
+                            "config": {
+                                "instance": 1,
+                                "latency": 0,
+                                "name": "",
+                                "volume": {
+                                    "muted": false,
+                                    "percent": 16
+                                }
+                            },
+                            "connected": true,
+                            "host": {
+                                "arch": "armv6l",
+                                "ip": "192.168.1.202",
+                                "mac": "b8:27:eb:be:f0:f6",
+                                "name": "badezimmer",
+                                "os": "Raspbian GNU/Linux 8.0 (jessie)"
+                            },
+                            "id": "badezimmer",
+                            "lastSeen": {
+                                "sec": 1511983027,
+                                "usec": 695974
+                            },
+                            "snapclient": {
+                                "name": "Snapclient",
+                                "protocolVersion": 2,
+                                "version": "0.12.0"
+                            }
+                        },
+                        {
+                            "config": {
+                                "instance": 1,
+                                "latency": 0,
+                                "name": "",
+                                "volume": {
+                                    "muted": false,
+                                    "percent": 18
+                                }
+                            },
+                            "connected": false,
+                            "host": {
+                                "arch": "armv6l",
+                                "ip": "192.168.1.40",
+                                "mac": "b8:27:eb:de:34:13",
+                                "name": "kueche",
+                                "os": "Raspbian GNU/Linux 8.0 (jessie)"
+                            },
+                            "id": "2e7311d7868244978f314762db251c8e",
+                            "lastSeen": {
+                                "sec": 1511544675,
+                                "usec": 13310
+                            },
+                            "snapclient": {
+                                "name": "Snapclient",
+                                "protocolVersion": 2,
+                                "version": "0.12.0"
+                            }
+                        },
+                        {
+                            "config": {
+                                "instance": 1,
+                                "latency": 0,
+                                "name": "",
+                                "volume": {
+                                    "muted": false,
+                                    "percent": 41
+                                }
+                            },
+                            "connected": false,
+                            "host": {
+                                "arch": "x86_64",
+                                "ip": "192.168.1.11",
+                                "mac": "30:5a:3a:7f:83:74",
+                                "name": "maweki-desktop",
+                                "os": "Fedora release 26 (Twenty Six)"
+                            },
+                            "id": "30:5a:3a:7f:83:74",
+                            "lastSeen": {
+                                "sec": 1511728006,
+                                "usec": 476776
+                            },
+                            "snapclient": {
+                                "name": "Snapclient",
+                                "protocolVersion": 2,
+                                "version": "0.8.0"
+                            }
+                        },
+                        {
+                            "config": {
+                                "instance": 1,
+                                "latency": 0,
+                                "name": "",
+                                "volume": {
+                                    "muted": false,
+                                    "percent": 16
+                                }
+                            },
+                            "connected": true,
+                            "host": {
+                                "arch": "armv6l",
+                                "ip": "192.168.1.40",
+                                "mac": "b8:27:eb:de:34:13",
+                                "name": "kueche",
+                                "os": "Raspbian GNU/Linux 8.0 (jessie)"
+                            },
+                            "id": "kueche",
+                            "lastSeen": {
+                                "sec": 1511983026,
+                                "usec": 623344
+                            },
+                            "snapclient": {
+                                "name": "Snapclient",
+                                "protocolVersion": 2,
+                                "version": "0.12.0"
+                            }
+                        },
+                        {
+                            "config": {
+                                "instance": 1,
+                                "latency": 0,
+                                "name": "",
+                                "volume": {
+                                    "muted": false,
+                                    "percent": 16
+                                }
+                            },
+                            "connected": false,
+                            "host": {
+                                "arch": "x86_64",
+                                "ip": "192.168.1.11",
+                                "mac": "30:5a:3a:7f:83:74",
+                                "name": "maweki-desktop",
+                                "os": "Fedora release 26 (Twenty Six)"
+                            },
+                            "id": "maweki-desktop",
+                            "lastSeen": {
+                                "sec": 1511818454,
+                                "usec": 128494
+                            },
+                            "snapclient": {
+                                "name": "Snapclient",
+                                "protocolVersion": 2,
+                                "version": "0.12.0"
+                            }
+                        },
+                        {
+                            "config": {
+                                "instance": 1,
+                                "latency": 0,
+                                "name": "",
+                                "volume": {
+                                    "muted": false,
+                                    "percent": 16
+                                }
+                            },
+                            "connected": true,
+                            "host": {
+                                "arch": "armv7l",
+                                "ip": "192.168.1.203",
+                                "mac": "cc:79:cf:24:12:9c",
+                                "name": "schlafzimmer",
+                                "os": "Debian GNU/Linux 8.3 (jessie)"
+                            },
+                            "id": "schlafzimmer",
+                            "lastSeen": {
+                                "sec": 1511983027,
+                                "usec": 14848
+                            },
+                            "snapclient": {
+                                "name": "Snapclient",
+                                "protocolVersion": 2,
+                                "version": "0.12.0"
+                            }
+                        },
+                        {
+                            "config": {
+                                "instance": 1,
+                                "latency": 0,
+                                "name": "",
+                                "volume": {
+                                    "muted": false,
+                                    "percent": 16
+                                }
+                            },
+                            "connected": true,
+                            "host": {
+                                "arch": "armv6l",
+                                "ip": "127.0.0.1",
+                                "mac": "7e:f3:ae:23:0d:53",
+                                "name": "wohnzimmer",
+                                "os": "Raspbian GNU/Linux 8.0 (jessie)"
+                            },
+                            "id": "wohnzimmer",
+                            "lastSeen": {
+                                "sec": 1511983028,
+                                "usec": 649662
+                            },
+                            "snapclient": {
+                                "name": "Snapclient",
+                                "protocolVersion": 2,
+                                "version": "0.12.0"
+                            }
+                        }
+                    ],
+                    "id": "da7a15b5-8b22-cc61-f845-7dce5eff957a",
+                    "muted": true,
+                    "name": "",
+                    "stream_id": "chromecast"
+                }
+            ],
+            "server": {
+                "host": {
+                    "arch": "armv6l",
+                    "ip": "",
+                    "mac": "",
+                    "name": "wohnzimmer",
+                    "os": "Raspbian GNU/Linux 8.0 (jessie)"
+                },
+                "snapserver": {
+                    "controlProtocolVersion": 1,
+                    "name": "Snapserver",
+                    "protocolVersion": 1,
+                    "version": "0.12.0"
+                }
+            },
+            "streams": [
+                {
+                    "id": "chromecast",
+                    "status": "playing",
+                    "uri": {
+                        "fragment": "",
+                        "host": "",
+                        "path": "/tmp/snapchromecast",
+                        "query": {
+                            "buffer_ms": "20",
+                            "codec": "flac",
+                            "name": "chromecast",
+                            "sampleformat": "44100:16:2"
+                        },
+                        "raw": "pipe:////tmp/snapchromecast?buffer_ms=20&codec=flac&name=chromecast&sampleformat=44100:16:2",
+                        "scheme": "pipe"
+                    }
+                }
+            ]
+        }
+    }
+}
