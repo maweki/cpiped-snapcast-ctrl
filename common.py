@@ -41,8 +41,9 @@ def incrementing_id(func):
 @incrementing_id
 def doRequest(requestId, client, method, params=None):
     from json import dumps, loads
-    base_request = {'method': method, 'jsonrpc': '2.0', 'id': requestId}
-    request = {**base_request, 'params': params} if params else base_request
+    request = {'method': method, 'jsonrpc': '2.0', 'id': requestId}
+    if params:
+        request.update({'params': params})
     print("send: " + dumps(request))
     client.write((dumps(request) + "\r\n").encode('ascii'))
     while (True):
