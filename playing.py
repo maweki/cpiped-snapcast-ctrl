@@ -34,6 +34,8 @@ def main(connection, stream):
 
 if __name__ == '__main__':
     args = parsedargs('snapcast stream mute')
-    telnet = telnetlib.Telnet(args.server, args.port)
-    main(telnet, args.stream)
-    telnet.close
+    try:
+        telnet = telnetlib.Telnet(args.server, args.port)
+        main(telnet, args.stream)
+    finally:
+        telnet.close
