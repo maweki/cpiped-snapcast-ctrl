@@ -5,8 +5,6 @@ from itertools import chain, tee
 from time import sleep
 
 def main(connection, stream):
-    mute_groups_by_stream(connection, stream, False)
-
     res = doRequest(connection, 'Server.GetStatus')
     clients_of_stream = chain.from_iterable(group['clients'] for group in res['server']['groups'] if group["stream_id"] == stream)
 
@@ -14,17 +12,18 @@ def main(connection, stream):
     clients_to_mute, clients_to_unmute = tee(unmuted_clients)
 
     for client in clients_to_mute:
-        sleep(0.5)
         doRequest(connection, 'Client.SetVolume', params={
             "id": client["id"],
             "volume": { "percent": client['config']['volume']['percent'],
                         "muted": True}
         })
 
-    sleep(2)
+    sleep(1)
+
+    mute_groups_by_stream(connection, stream, False)
 
     for client in clients_to_unmute:
-        sleep(0.5)
+        sleep(1)
         doRequest(connection, 'Client.SetVolume', params={
             "id": client["id"],
             "volume": { "percent": client['config']['volume']['percent'],
