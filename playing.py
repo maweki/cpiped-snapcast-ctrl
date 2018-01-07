@@ -18,12 +18,12 @@ def main(connection, stream):
                         "muted": True}
         })
 
-    sleep(1)
+    sleep(0.2)
 
     mute_groups_by_stream(connection, stream, False)
 
     for client in clients_to_unmute:
-        sleep(1)
+        sleep(0.2)
         doRequest(connection, 'Client.SetVolume', params={
             "id": client["id"],
             "volume": { "percent": client['config']['volume']['percent'],
