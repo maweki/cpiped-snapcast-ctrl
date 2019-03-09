@@ -12,11 +12,14 @@ def main(connection, stream):
     clients_to_mute, clients_to_unmute = tee(unmuted_clients)
 
     for client in clients_to_mute:
-        doRequest(connection, 'Client.SetVolume', params={
-            "id": client["id"],
-            "volume": { "percent": client['config']['volume']['percent'],
-                        "muted": True}
-        })
+        try:
+            doRequest(connection, 'Client.SetVolume', params={
+                "id": client["id"],
+                "volume": { "percent": client['config']['volume']['percent'],
+                            "muted": True}
+            })
+        except Exception as e:
+            print(e)
 
     sleep(0.2)
 
@@ -24,11 +27,14 @@ def main(connection, stream):
 
     for client in clients_to_unmute:
         sleep(0.2)
-        doRequest(connection, 'Client.SetVolume', params={
-            "id": client["id"],
-            "volume": { "percent": client['config']['volume']['percent'],
-                        "muted": False}
-        })
+        try:
+            doRequest(connection, 'Client.SetVolume', params={
+                "id": client["id"],
+                "volume": { "percent": client['config']['volume']['percent'],
+                            "muted": False}
+            })
+        except Exception as e:
+            print(e)
 
 
 if __name__ == '__main__':
