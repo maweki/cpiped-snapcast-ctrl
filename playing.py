@@ -37,4 +37,4 @@ if __name__ == '__main__':
         telnet = telnetlib.Telnet(args.server, args.port)
         main(telnet, args.stream)
     finally:
-        telnet.close
+        telnet.close()
